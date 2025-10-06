@@ -16,30 +16,40 @@
         <header>
             <img src="images/pizza-guy.jpeg" alt="Papa's pizza guy">
             <h1>Papa's Pizza</h1>
-            <p id="tagline">The best pizza GRC students have ever tasted!</p>
+            <p id="tag-line">The best pizza GRC students have ever tasted!</p>
             <hr>
             <p>Papa's Pizza serves up fresh, handcrafted pizzas with bold flavors and a warm, family-friendly vibe.</p>
             <a id="contact-button" href="#" role="button">Contact Us</a>
         </header>
         <form id="pizza-form" action="#" method="get">
+
             <!-- Contact Info -->
             <fieldset>
                 <legend>Contact Info</legend>
-                <label for="fname">First Name:</label><input type="text" id="fname" name="fname">
-                <label for="lname">Last Name:</label><input for="text" id="lname" name="lname">
-                <label for="email">Email:</label><input for="text" id="email" name="email">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
             </fieldset>
 
+            <!-- Pickup or Delivery -->
             <fieldset>
                 <legend>Select Pickup or Delivery</legend>
-                <label for="pickup"><input type='radio' id="pickup" name="method" value="Pickup">Pickup</label>
-                <label for="delivery"><input type='radio' id="delivery" name="method" value="delivery">Delivery</label>
+                <label for="pickup">
+                    <input type='radio' id="pickup" name="method" value="Pickup">Pickup</label>
+                <label for="delivery">
+                    <input type='radio' id="delivery" name="method" value="delivery">Delivery</label>
             </fieldset>
             
+            <!-- Toppings -->
             <fieldset>
                 <legend>Select Toppings</legend>
-                <label for="pepperoni"><input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">Pepperoni</label>
-                <label for="pineapple"><input type="checkbox" id="pineapple" name="toppings[]" value="pineapple">Pineapple</label>
+                <label for="pepperoni">
+                    <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">Pepperoni</label>
+                <label for="pineapple">
+                    <input type="checkbox" id="pineapple" name="toppings[]" value="pineapple">Pineapple</label>
             </fieldset>
 
             <!-- Pizza Size -->
@@ -50,12 +60,15 @@
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
-                    
                 </select>
             </fieldset>
 
+            <!-- Comment field -->
+            <label for="comment">Comments:</label>
+            <textarea rows="5" id="comment" name="comment"></textarea>
+            
             <!-- Add an Order button -->
-            <button type="submit">Place Order</button>
+            <button type="submit" id="order-button">Place Order</button>
         </form>
     </div>
 </body>

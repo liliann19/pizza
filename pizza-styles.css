@@ -21,7 +21,7 @@ body {
     padding: 0 1rem 2rem 1rem;
 }
 
-.main-button {
+#contact-button {
     border: none;
     background-color: darkgreen;
     border-color: darkgreen;
@@ -30,6 +30,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 1rem;
+
 }
 
 /* Header styles */
