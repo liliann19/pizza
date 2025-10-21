@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papa's Pizza</title>
 
+    <!-- Link to JavaScript -->
+    <script src="js/pizza.js" defer></script>
+
     <!-- Favicon -->
     <link rel="icon" href="images/pizza_icon.png">
 
@@ -19,20 +22,25 @@
             <p id="tag-line">The best pizza GRC students have ever tasted!</p>
             <hr>
             <p>Papa's Pizza serves up fresh, handcrafted pizzas with bold flavors and a warm, family-friendly vibe.</p>
-            <a id="contact-button" href="#" role="button">Contact Us</a>
+            <a id="contact-button" href="/contact-us" role="button">Contact Us</a>
         </header>
 
-        <form id="pizza-form" action="#" method="get">
+        <form id="pizza-form" action="submit-order" method="post">
 
             <!-- Contact Info -->
             <fieldset>
                 <legend>Contact Info</legend>
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
+                <span id="err-fname" class="error">First name cannot be empty!</span>
+
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname">
+                <span id="err-lname" class="error">Last name cannot be empty!</span>
+
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
+                <span id="err-email" class="error">Email cannot be empty!</span>
             </fieldset>
 
             <!-- Pickup or Delivery -->
@@ -42,6 +50,7 @@
                     <input type='radio' id="pickup" name="method" value="Pickup">Pickup</label>
                 <label for="delivery">
                     <input type='radio' id="delivery" name="method" value="delivery">Delivery</label>
+                    <span id="err-method" class="error">Please select pickup or delivery</span>
             </fieldset>
             
             <!-- Toppings -->
@@ -62,6 +71,7 @@
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
                 </select>
+                <span id="err-size" class="error">Please select a size</span>
             </fieldset>
 
             <!-- Comment field -->

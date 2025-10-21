@@ -92,6 +92,12 @@ fieldset {
 label {
     display: block;
     padding-bottom: .5rem;
+    margin-top: 0.5rem;
+}
+
+.error {
+    color: darkred;
+    display: none;
 }
 
 /* Mobile styles */
