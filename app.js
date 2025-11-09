@@ -42,7 +42,8 @@ app.get('/confirm', (req, res) => {
 // Define an "admin" route
 app.get('/admin', (req, res) => {
     
-    res.send(orders);
+    res.render('admin', { orders });
+    //res.send(orders);
     //res.sendFile(`${import.meta.dirname}/views/admin.html`);
 });
 
